@@ -2,14 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Projectile : MonoBehaviour {
+[RequireComponent(typeof(Rigidbody2D))]
+public abstract class Projectile : MonoBehaviour {
+
+    protected Rigidbody2D rb;
 
     [SerializeField] float projectileSpeed = 4f;
     [SerializeField] int projectileDamage = 10;
     [SerializeField] float destroyTime = 5f;
 
-    private void Start()
+    private void Awake()
     {
+        rb = GetComponent<Rigidbody2D>();
         StartCoroutine(DestroyProjectile());
     }
 

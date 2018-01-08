@@ -22,9 +22,9 @@ GameObject:
   - component: {fileID: 212520245847454486}
   - component: {fileID: 50993951469026400}
   - component: {fileID: 61116506751866452}
-  - component: {fileID: 114228670319355914}
+  - component: {fileID: 114602442835595050}
   m_Layer: 0
-  m_Name: Big Box Attack
+  m_Name: Carrot Attack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37,8 +37,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1915659481434398}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.99, y: 0.14, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalPosition: {x: -1.2160022, y: 0.91905904, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -50,7 +50,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1915659481434398}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -88,7 +88,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4, y: 4}
   m_EdgeRadius: 0
---- !u!114 &114228670319355914
+--- !u!114 &114602442835595050
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -96,12 +96,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1915659481434398}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66ed0232a0e15ca4885f61dff3675b3d, type: 3}
+  m_Script: {fileID: 11500000, guid: 8b69d51fcdbf9154cb8c52856db4ccd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileSpeed: 11
+  projectileSpeed: 4
   projectileDamage: 10
-  destroyTime: 5
+  destroyTime: 15
 --- !u!212 &212520245847454486
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -135,7 +135,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0dcd830a93fad774eb1eeaadfff1ff7a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.7241379, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

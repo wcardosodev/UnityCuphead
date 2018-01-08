@@ -12,6 +12,14 @@ public class PlayerHealthText : MonoBehaviour {
 	}
 
 	void Update () {
-        healthText.text = FindObjectOfType<PlayerAttack>().GetComponent<CharacterHealth>().Health.ToString();
+
+        try
+        {
+            healthText.text = FindObjectOfType<PlayerAttack>().GetComponent<CharacterHealth>().Health.ToString();
+        }
+        catch (System.NullReferenceException)
+        {
+            healthText.text = "0";
+        }
 	}
 }

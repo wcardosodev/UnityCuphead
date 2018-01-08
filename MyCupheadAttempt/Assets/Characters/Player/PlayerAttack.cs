@@ -28,14 +28,14 @@ public class PlayerAttack : MonoBehaviour {
                 GameObject projectile = Instantiate(projectileToFire, firePoint[counter].transform.position, Quaternion.identity);
                 projectile.layer = gameObject.layer;
 
-                if (GetComponent<PlayerMovement>().FacingLeft)
-                {
-                    projectile.GetComponent<Rigidbody2D>().velocity = -Vector2.right * projectile.GetComponent<Projectile>().ProjectileSpeed;
-                }
-                else
-                {
-                    projectile.GetComponent<Rigidbody2D>().velocity = Vector2.right * projectile.GetComponent<Projectile>().ProjectileSpeed;
-                }
+                //if (GetComponent<PlayerMovement>().FacingLeft)
+                //{
+                //    projectile.GetComponent<Rigidbody2D>().velocity = -Vector2.right * projectile.GetComponent<Projectile>().ProjectileSpeed;
+                //}
+                //else
+                //{
+                //    projectile.GetComponent<Rigidbody2D>().velocity = Vector2.right * projectile.GetComponent<Projectile>().ProjectileSpeed;
+                //}
 
                 counter++;
 

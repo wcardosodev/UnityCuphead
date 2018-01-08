@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 61116506751866452}
   - component: {fileID: 114228670319355914}
   m_Layer: 0
-  m_Name: Small Box Attack
+  m_Name: Dirt Attack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37,8 +37,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1915659481434398}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.3229027, y: 1.4586368, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66ed0232a0e15ca4885f61dff3675b3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileSpeed: 12
+  projectileSpeed: 11
   projectileDamage: 10
   destroyTime: 5
 --- !u!212 &212520245847454486
@@ -135,7 +135,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0dcd830a93fad774eb1eeaadfff1ff7a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.50735295, g: 0.34639964, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
